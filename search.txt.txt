@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find A Ride</title>
+    <link rel="stylesheet" type="text/css" href="search.css">
+</head>
+<style>
+    body{
+       background:linear-gradient(to left, pink , rgb(110, 187, 238));
+}
+
+</style>
+
+<body>
+    <div class="wrapper" >
+        <div class="myDiv">
+            <h1><b>Find A Ride</b></h1>
+        </div> 
+        <br><br>
+        <div class="myDiv1">
+            <p>Coronavirus: for more information about the current situation, please read our<a
+                    href="https://www.mygov.in/covid-19"> Help Centre!</a></p>
+        </div>
+        <br>
+        <br>
+
+        <label for="#">
+            <h3>Leaving from:
+        </label>
+        <input list="Cities">
+        <datalist id="Cities">
+            <option value="Chandigarh">
+            <option value="Rajpura">
+            <option value="Ludhiana">
+            <option value="Zirakpur">
+            <option value="Jalalabad">
+            <option value="New Delhi">
+                </h3><br>
+
+
+                <label for="#">
+                    <h3>Going to:
+                </label>
+                <input list="Cities">
+                <datalist id="Cities">
+                    <option value="Chandigarh">
+                    <option value="Rajpura">
+                    <option value="Ludhiana">
+                    <option value="Zirakpur">
+                    <option value="Jalalabad">
+                    <option value="New Delhi">
+                        </h3><br><br>
+                        <hr>
+                        <h2 style="color: brown;
+                    text-align: center" ;>No. of Passengers
+                            <select name="No. of Passengers">
+                                <option selected>1</option>
+                                <option> 2 </option>
+                                <option> 3 </option>
+                                <option> 4 </option>
+                                <option> 5 </option>
+                            </select>
+                        </h2>
+                        <hr>
+
+                        <br>
+                        <br>
+                        <button onclick="alert('Submission Complete')">
+                            <h3>Submit</h3>
+                        </button>
+
+    </div>
+
+</body>
+
+</html>
