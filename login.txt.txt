@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Login Page </title>
+    <style>
+        Body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background: linear-gradient(to left, pink, rgb(110, 187, 238));
+        }
+
+        button {
+            background-color: lightcyan;
+            width: 100%;
+            color: orange;
+            padding: 15px;
+            margin: 10px 0px;
+            border: none;
+            cursor: pointer;S
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+        }
+
+        .wrapper {
+            background-color: white;
+            width: 500px;
+            padding: 25px;
+            margin: 60px auto 0;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .myDiv {
+
+            background: linear-gradient(to left, pink, rgb(110, 187, 238));
+            text-align: center;
+        }
+    </style>
+
+
+    <script>
+    function validateForm() {
+      let x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+    </script>
+    
+<body>
+
+    <form>
+        <div class="wrapper">
+            <div class="myDiv">
+                <h1>Login Form </h1>
+            </div>
+
+            <body>
+
+
+                <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                    Username <input type="text" name="fname" placeholder="Enter username">
+
+                    <label>Password : </label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                    <button type="submit">Login</button>
+                    <input type="checkbox" checked="checked"> Remember me <br><br>
+                </form>
+                <br>
+                Forgot <a href="#"> password? </a>
+        </div>
+    </form>
+</body>
+
+</html>
